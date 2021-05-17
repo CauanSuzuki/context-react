@@ -5,8 +5,6 @@ export function CountProvider({ children }) {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
 
-  console.log(login, senha)
-
   return (
     <countContext.Provider
       value={{

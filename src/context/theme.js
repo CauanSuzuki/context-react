@@ -20,7 +20,6 @@ export const themes = [
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(themes[1]);
-  console.log("tema Atual: ", theme);
 
   return (
     <themecontext.Provider

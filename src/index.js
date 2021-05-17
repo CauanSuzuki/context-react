@@ -6,14 +6,17 @@ import reportWebVitals from "./reportWebVitals";
 
 import { CountProvider } from "./context/count";
 import { ThemeProvider } from "./context/theme";
+import {ConteudoProvider} from "./context/conteudo"
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <CountProvider>
-        <App />
-      </CountProvider>
-    </ThemeProvider>
+    <ConteudoProvider>
+      <ThemeProvider>
+        <CountProvider>
+          <App />
+        </CountProvider>
+      </ThemeProvider>
+    </ConteudoProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

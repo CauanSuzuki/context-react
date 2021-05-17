@@ -1,7 +1,7 @@
 .principal {
   display: grid;
   grid-template-areas:
-    "asideBar menu  menu"
+    "asideBar nav  nav"
     "asideBar conteudo conteudo"
     "asideBar footer footer";
   width: 100%;
@@ -9,21 +9,26 @@
   grid-template-columns: 200px auto;
   grid-template-rows: 120px auto 120px;
 }
-.menu {
-  grid-area: menu;
+.nav {
+  grid-area: nav;
   text-align: right;
+  /* background-color:aquamarine */
 }
 .conteudo {
   grid-area: conteudo;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: blue; */
 }
 .asideBar {
   grid-area: asideBar;
+  /* background-color: blueviolet; */
 }
 .footer {
   grid-area: footer;
   align-items: center;
   justify-content: center;
+  /* background-color: brown; */
 }
+
