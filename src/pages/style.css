@@ -1,0 +1,29 @@
+.principal {
+  display: grid;
+  grid-template-areas:
+    "asideBar menu  menu"
+    "asideBar conteudo conteudo"
+    "asideBar footer footer";
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 120px auto 120px;
+}
+.menu {
+  grid-area: menu;
+  text-align: right;
+}
+.conteudo {
+  grid-area: conteudo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.asideBar {
+  grid-area: asideBar;
+}
+.footer {
+  grid-area: footer;
+  align-items: center;
+  justify-content: center;
+}
