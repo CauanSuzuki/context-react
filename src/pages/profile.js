@@ -7,9 +7,8 @@ import Footer from "../components/footer";
 import { useConteudo } from "../context/conteudo";
 
 function Profile({ children }) {
-  const {name,setName } = useConteudo();
+  const { name, setName } = useConteudo();
   const [rename, setRename] = useState("");
-  // const [name, setName] = useState([]);
 
   const { theme, setTheme } = useTheme();
   function trocarTema() {
@@ -20,37 +19,8 @@ function Profile({ children }) {
     }
   }
   function changeName() {
-    setName( rename );
+    setName(rename);
   }
-
-  // function changeName (){
-  //   setName({ name: rename });
-  // }
-
-  // return (
-  //   <div className="principal">
-  //     <div className="menu">{name.name}</div>
-  //     <div
-  //       className="conteudo"
-  //       style={{
-  //         background: theme.colors.background,
-  //         color: theme.colors.text,
-  //       }}
-  //     >
-  //       <input
-  //         type="text"
-  //         onChange={(event) => setRename(event.target.value)}
-  //       />
-  //       <button onClick={() => changeName()}>Rename</button>
-  //       {children}{" "}
-  //       <p>
-  //         <button onClick={() => trocarTema()}>Switch Theme</button>
-  //       </p>
-  //     </div>
-  //     <div className="asideBar">{name.name}</div>
-  //     <div className="footer">{name.name}</div>
-  //   </div>
-  // );
 
   return (
     <div className="principal">

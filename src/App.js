@@ -13,7 +13,6 @@ import PageRegister from "./pages/register";
 import PageData from "./pages/data";
 import PageProfile from "./pages/profile";
 import { useCount } from "./context/count";
-import { useTheme } from "./context/theme";
 
 function App() {
   const { login, senha } = useCount();
